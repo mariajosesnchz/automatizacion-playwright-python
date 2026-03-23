@@ -53,8 +53,6 @@ Asegúrate de tener instalado:
 ## Reportes de ejecución
 - Ejecuta el siguiente comando:
 pytest --html=reports/report.html --self-contained-html
-- Ubicación del reporte
-
 - El reporte se generará en la siguiente ruta:
  reports/report.html
 ## Estructura del Proyecto
