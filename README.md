@@ -1,28 +1,75 @@
-# Automatización de Pruebas con Playwright y Python
+# Proyecto de Automatización de Pruebas Web con Playwright
 
-Este proyecto automatiza la prueba del formulario de contacto y modales en la web de ejemplo "https://www.xtrim.com.ec/", usando **Playwright** y **Python** con una estructura de Page Object Model (POM).
+## Descripción
+
+Este proyecto contiene un conjunto de pruebas automatizadas para validar el funcionamiento de formularios y modales en el sitio web de Xtrim.
+
+Las pruebas están desarrolladas utilizando **Python**, **Playwright** y **Pytest**, siguiendo el patrón de diseño **Page Object Model (POM)** para mantener una estructura modular, reutilizable y fácil de mantener.
+
+El objetivo principal es validar:
+- El envío correcto de formularios con datos válidos.
+- Validaciones de errores con datos inválidos o vacíos.
+- Manejo de modales y navegación dentro del sitio.
+
+---
 
 ## Tecnologías utilizadas
-- Python 3.11+
+
+- Python 3.x
 - Playwright
 - Pytest
-- Faker (para datos aleatorios)
-- Docker (opcional)
-- Git / GitHub
+- Faker (generación de datos dinámicos)
 
-## Estructura del proyecto
-project/
-├── pages/
-│ ├── base_page.py
-│ ├── home_page.py
-│ └── contact_page.py
-├── tests/
-│ ├── test_home.py
-│ └── test_contact.py
-├── utils/
-│ ├── config.py
-│ ├── data_reader.py
-│ └── fake_data.py
-├── requirements.txt
-├── README.md
-└── docker-compose.yml
+---
+
+## 📋 Requisitos
+
+Asegúrate de tener instalado:
+
+- Python 3.8 o superior
+- pip (gestor de paquetes de Python)
+
+---
+
+## Instrucciones para Ejecutar el Proyecto
+
+1. Clonar el repositorio:
+
+- git clone https://github.com/mariajosesnchz/automatizacion-playwright-python.git
+- cd automatizacion-playwright-python
+
+2. Crear y activar entorno virtual:
+- python -m venv venv
+- venv\Scripts\activate   # Windows
+
+3. Instalar dependencias:
+- pip install -r requirements.txt
+
+4. Instalar navegadores de Playwright:
+- python -m playwright install
+
+## Ejecución de pruebas
+- pytest -s -v
+## Reportes de ejecución
+- Ejecuta el siguiente comando:
+pytest --html=reports/report.html --self-contained-html
+- Ubicación del reporte
+
+- El reporte se generará en la siguiente ruta:
+ reports/report.html
+## Estructura del Proyecto
+- `pages/`
+  - `home_page.py`: Acciones y validaciones de la página principal.
+  - `contact_page.py`: Acciones y validaciones del formulario de contacto..
+- `tests/`: Contiene los casos de prueba automatizados.
+  - `home_page.py`: Pruebas relacionadas con el modal y navegación..
+  - `test_contact_page.py`: Pruebas del formulario (válido, inválido, vacío, duplicado).
+- `utils/`: Utilidades y configuración del proyecto.
+  - `config.py`: Variables de entorno (BASE_URL, HEADLESS, TIMEOUT).
+  - `data_reader.py`: Lectura de datos desde archivos (JSON u otros). 
+  - `fake_data.py`: Generación de datos dinámicos con Faker.
+- `conftest.py`: Configuración global de pytest (fixture del navegador, setup y teardown).
+- `requirements.txt`: Lista de dependencias del proyecto.
+- `README.md`: Documentación del proyecto e instrucciones de uso.
+- `venv/`: Entorno virtual de Python (no se incluye en el repositorio).
+- `reports/`: Reportes de ejecución de pruebas (ej. pytest-html).
