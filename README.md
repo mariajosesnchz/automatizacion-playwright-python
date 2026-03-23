@@ -1,4 +1,4 @@
-# Proyecto de Automatización de Pruebas Web con Playwright
+# Proyecto de Automatización de Pruebas con Playwright para Xtrim
 
 ## Descripción
 
