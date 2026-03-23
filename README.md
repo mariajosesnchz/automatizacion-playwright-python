@@ -2,9 +2,7 @@
 
 ## Descripción
 
-Este proyecto contiene un conjunto de pruebas automatizadas para validar el funcionamiento de formularios y modales en el sitio web de Xtrim.
-
-Las pruebas están desarrolladas utilizando **Python**, **Playwright** y **Pytest**, siguiendo el patrón de diseño **Page Object Model (POM)** para mantener una estructura modular, reutilizable y fácil de mantener.
+Este repositorio contiene un conjunto de pruebas automatizadas para el sitio web de Xtrim. Las pruebas están desarrolladas utilizando Python, Playwright y Pytest, siguiendo el patrón de diseño Page Object Model (POM). El objetivo principal es validar el correcto funcionamiento del formulario de contacto, incluyendo el envío con datos válidos, la validación de errores cuando se ingresan datos inválidos o vacíos, así como el manejo de modales y navegación dentro del sitio. A continuación, se detallan las instrucciones para ejecutar el proyecto en un entorno local.
 
 El objetivo principal es validar:
 - El envío correcto de formularios con datos válidos.
