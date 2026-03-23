@@ -1,0 +1,23 @@
+{
+"invalido": {
+    "nombre": "Maria Jose",
+    "cedula": "0944094201",
+    "telefono": "1551111222",
+    "email": "mariaj@gmail.com"
+},
+"vacio": {
+    "nombre": "",
+    "cedula": "",
+    "telefono": "",
+    "email": ""
+},
+
+"duplicadoCI": {
+    "nombre": "María José sánchez Luis",
+    "cedula": "0944094200",
+    "telefono": "8498484849",
+    "email": "invbc2@gmail.com"
+}
+
+
+}
